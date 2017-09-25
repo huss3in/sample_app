@@ -25,4 +25,6 @@ test:
 
 production:
   <<: *default
-  database: passapp
+  database: sample_app_production
+  username: hussein
+  password: 12345678
