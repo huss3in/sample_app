@@ -28,3 +28,9 @@ production:
   database: sample_app_production
   username: hussein
   password: 12345678
+
+staging:
+  <<: *default
+  database: sample_app_staging
+  username: hussein
+  password: 12345678
