@@ -4,8 +4,8 @@ lock "3.9.1"
 set :application, "sample_app"
 set :repo_url, "git@github.com:huss3in/sample_app.git"
 
-set :deploy_to, '/home/ubuntu/sample_app'
-
+#set :deploy_to, '/home/ubuntu/sample_app'
+set :deploy_to, "/home/ubuntu/#{fetch :application}/#{fetch :rails_env}"
 append :linked_files, "config/database.yml", "config/secrets.yml"
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
 

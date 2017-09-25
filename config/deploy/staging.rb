@@ -60,3 +60,4 @@
 #     # password: "please use keys"
 #   }
 server '52.11.206.60', user: 'ubuntu', roles: %w{app db web}
+set :deploy_to, "/home/ubuntu/#{fetch :application}/#{fetch :rails_env}"
